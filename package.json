@@ -9,9 +9,18 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@11labs/client": "^0.2.0",
+    "@elevenlabs/react": "^0.12.3",
+    "@hookform/resolvers": "^5.2.2",
+    "axios": "^1.13.2",
+    "lucide-react": "^0.562.0",
     "next": "16.1.1",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "react-hook-form": "^7.70.0",
+    "socket.io-client": "^4.8.3",
+    "zod": "^4.3.5",
+    "zustand": "^5.0.9"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
