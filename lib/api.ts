@@ -80,3 +80,17 @@ export const memoryApi = {
     api.get(`/sessions/${sessionId}/memory`, { params: { limit } }),
 };
 
+// Spotify Predictor API
+export const spotifyApi = {
+  predict: (data: {
+    danceability: number;
+    energy: number;
+    loudness: number;
+    tempo: number;
+    duration_ms: number;
+    artist_popularity?: number;
+  }) => api.post('/spotify-predictor/predict', data),
+  health: () => api.get('/spotify-predictor/health'),
+  reload: () => api.post('/spotify-predictor/reload'),
+};
+
